@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../../Fonts/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: roboto;
+}
+
+.header{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: block;
+    z-index: 100;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nav-bar ul{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-bar li{
+    display: inline;
+    padding: 2px 6px;
+    margin: 0.01%;
+    color: white;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.nav-bar li:hover{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+
+.main-content{
+    padding-top: 135px;
+    width: 100%;
+    height: auto;
+    background-color: cornflowerblue;
+    min-height: 420px;
+}
+
+.main-wrapper{
+    padding-bottom: 10px;
+    background-color: white;
+    min-height: 420px;
+}
+
+.main-content h4{
+    color: grey;
+    font-weight: 100;
+    padding: 10px 5%;
+}
+
+.main-content h2{
+    text-align: center;
+    padding: 5px 5% 5px 5%;
+    width: 90%;
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+.main-content p{
+    text-align: left;
+    width: 80%;
+    margin: 0px;
+    padding: 8px 9.7%;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+.main-content a{
+    text-decoration: none;
+}
+
+.main-content a:hover{
+    text-decoration: underline;
+}
+
+.proverb{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.proverb p{
+    padding: 5px 10px;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.footer-logo{
+    display: none;
+}
+
+.subscribe{
+    color: grey;
+    margin: 0px 10%;
+}
+
+.subscribe form{
+    text-align: center;
+    padding: 30px 0px 0px;
+    font-size: 18px;
+}
+
+.subscribe p{
+    padding-bottom: 10px;
+}
+
+.social{
+    color: white;
+    display: none;
+}
+
+.social-mobile{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.social-icons{
+    padding: 0px 2%;
+    display: inline-block;
+}
+
+.social-icons a:hover{
+    filter: invert();
+}
+
+.copyright footer{
+    background-color: grey;
+    text-align: center;
+    padding-top: 5px;
+    height: 30px;
+}
+
+
+@media only screen and (min-width:550px){
+
+    .main-content h2{
+        font-size: 22px;
+    }
+
+    .main-content p{
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px){
+    
+    .logo{
+        float: left;
+        padding-left: 8%;
+    }
+
+    .logo img{
+        transform: scale(1.1,1.1);
+        padding: 30px 0px 40px;
+    }
+    
+    .nav-bar{
+        padding-right: 5%;
+    }
+
+    .nav-bar ul{
+        margin-top: 65px;
+        padding-bottom: 0px;
+        text-align: right;
+    }
+    
+    .nav-bar li{
+        padding: 3px 7px;
+        font-size: 19px;
+    }
+    
+    .main-content{
+        padding-top: 150px;
+    }
+    
+    .main-wrapper{
+        padding-bottom: 20px;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    .main-content h2{
+        font-size: 25px;
+    }
+
+    .main-content p{
+        font-size: 17px;
+    }
+    
+    .proverb p{
+        padding: 10px 10px;
+    }
+    
+    .footer{
+        height: 135px;
+    }
+    
+    .footer-logo{
+        display: block;
+        float: left;
+    }
+
+    .footer-logo img{
+        padding-top: 30px;
+        padding-left: 10%;
+    }
+    
+    .subscribe{
+        margin: 0px 5%;
+    }
+    
+    .subscribe form{
+        float: right;
+        padding: 35px 0px 0px;
+    }
+
+    .social{
+        width: 140px;
+        margin: auto;
+        display: block;
+    }
+
+    .social-wrap{
+        width: 100%;
+        height: 140px;
+        padding-top: 13px;
+    }
+
+    .social-account{
+        width: 100%;
+        height: 30px;
+        padding-bottom: 8px;
+        color: grey;
+    }
+
+    .social img{
+        float: left;
+        padding: 0px 10px 0px 0px;
+        filter: invert(100%);
+    }
+
+    .social-account:hover{
+        color: white;
+    }
+
+    #social-hover:hover .highlight-icon{
+        filter: invert(0%);
+    }
+
+    .social h4{
+        padding-top: 2px;
+        font-size: 19px;
+    }
+
+    .social-mobile{
+        display: none;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 900px){ 
+
+    .main-wrapper{
+        margin: 0px 12%;
+        padding-bottom: 20px;
+    }
+
+    .main-content h2{
+        font-size: 26px;
+    }
+
+    .main-content p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    .main-wrapper{
+        margin: 0px 16%;
+    }
+
+    .main-content h4{
+        padding-top: 18px;
+    }
+
+    .main-content h2{
+        font-size: 27px;
+    }
+
+    .main-content p{
+        font-size: 19px;
+    }
+
+    .footer-logo{
+        margin-left: 13%;
+    }
+    .subscribe{
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+
+    .main-content h2{
+        font-size: 29px;
+    }
+
+    .main-content p{
+        font-size: 20px;
+    }
+}
